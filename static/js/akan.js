@@ -20,6 +20,12 @@ function submission () {
         let gender = "female";
     }
     if (dd <= 0 || dd > 31) {
-        alert("invalid entry")
+        alert("invalid entry!");
+    }
+    else if (mm <= 1 || mm > 31) {
+        alert("invalid entry!");
+    }
+    else if (mm == 2 && dd > 29 && yy%4 !=0) {
+        alert("invalid entry!")
     }
 }
