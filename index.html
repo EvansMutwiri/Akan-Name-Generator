@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>Your Akan Name</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Want to know your Akan name?</h3>
+      <p>
+        Most people do know when their birthdays are, <br />
+        but some might not know what day of the week they were born. <br />
+        This web app shows you the day of the week you were born and your
+        corresponding Akan culture name.
+      </p>
+      <div class="form">
+        <form action="" class="row g-3">
+            <!-- <select name="month" id="month">
+    <option value="month">01</option>
+    <option value="month">02</option>
+    <option value="month">03</option>
+    <option value="month">04</option>
+    <option value="month">05</option>
+    <option value="month">06</option>
+    <option value="month">07</option>
+    <option value="month">08</option>
+    <option value="month">09</option>
+    <option value="month">10</option>
+    <option value="month">11</option>
+    <option value="month">12</option>
+            </select> -->
+          <label for="Day">Day</label>
+          <input
+            type="text"
+            name="day"
+            class="day"
+            placeholder="DD eg. 01"
+            min="01"
+            required
+          />
+          <label for="month">Month</label>
+          <input
+            type="text"
+            name="month"
+            class="month"
+            placeholder="MM eg. 08"
+            max="12"
+            min="1"
+            required
+          />
+          <label for="year">Year</label>
+          <input
+            type="number"
+            name="year"
+            id="year"
+            placeholder="CCYY eg. 1980"
+            min="1000"
+            required
+          />
+          <div class="gender-select">
+              <label for="gender">Gender</label>
+            <input
+              type="radio"
+              name="gender"
+              id="gender"
+              value="Male"
+              checked
+            />
+            Male
+            <input type="radio" name="gender" id="gender" value="female" />
+            Female
+            <input type="button" value="Submit" onclick="submission();" a/>
+            #result
+          </div>
+        </form>
+    </div>
+    </div>
+    <script src="/static/js/akan.js"></script>
+  </body>
+</html>
+
+let calculation = parseInt((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd % 7;
