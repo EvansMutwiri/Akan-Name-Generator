@@ -10,77 +10,66 @@
   </head>
   <body>
     <div class="container">
-      <h3>Want to know your Akan name?</h3>
-      <p>
-        Most people do know when their birthdays are, <br />
-        but some might not know what day of the week they were born. <br />
-        This web app shows you the day of the week you were born and your
-        corresponding Akan culture name.
-      </p>
-      <div class="form">
-        <form action="" class="row g-3">
-            <!-- <select name="month" id="month">
-    <option value="month">01</option>
-    <option value="month">02</option>
-    <option value="month">03</option>
-    <option value="month">04</option>
-    <option value="month">05</option>
-    <option value="month">06</option>
-    <option value="month">07</option>
-    <option value="month">08</option>
-    <option value="month">09</option>
-    <option value="month">10</option>
-    <option value="month">11</option>
-    <option value="month">12</option>
-            </select> -->
-          <label for="Day">Day</label>
-          <input
-            type="text"
-            name="day"
-            id="day"
-            placeholder="DD eg. 01"
-            maxlength="2"
-            min="01"
-            required
-          />
-          <label for="month">Month</label>
-          <input
-            type="text"
-            name="month"
-            id="month"
-            placeholder="MM eg. 08"
-            maxlength="2"
-            max="12"
-            min="1"
-            required
-          />
-          <label for="year">Year</label>
-          <input
-            type="text"
-            name="year"
-            id="year"
-            placeholder="CCYY eg. 1980"
-            maxlength="4"
-            required
-          />
-          <div class="gender-select">
-              <label for="gender">Gender</label>
-            <input
-              type="radio"
-              name="gender"
-              class="gender"
-              value="male"
-            />
-            Male
-            <input type="radio" name="gender" class="gender" value="female"/>
-            Female
-            <a href="#details"><button type="button" class="button"
-              onclick="JavaScript:akanName()">Submit</button></a>
-          </div>
-        </form>
-        <div id="result">
-          <p id="name"></p>
+      <div class="row">
+        <div class="col-md-4"><div class="animated"><h2 class="tada">Want to know your Akan name?</h3>
+          <p></div>
+              Most people do know when their birthdays are, <br />
+              but some might not know what day of the week they were born. <br />
+              This web app shows you the day of the week you were born and your
+              corresponding Akan culture name.
+            </p>
         </div>
+        <div class="form col-md-8">
+          <form action="" class="row g-3">
+            <label for="Day">Day</label>
+            <input
+              type="text"
+              name="day"
+              id="day"
+              placeholder="DD eg. 01"
+              maxlength="2"
+              min="01"
+              required
+            />
+            <label for="month">Month</label>
+            <input
+              type="text"
+              name="month"
+              id="month"
+              placeholder="MM eg. 08"
+              maxlength="2"
+              max="12"
+              min="1"
+              required
+            />
+            <label for="year">Year</label>
+            <input
+              type="text"
+              name="year"
+              id="year"
+              placeholder="CCYY eg. 1980"
+              maxlength="4"
+              required
+            />
+            <div class="gender-select">
+                <label for="gender">Gender</label>
+              <input
+                type="radio"
+                name="gender"
+                class="gender"
+                value="male"
+              />
+              Male
+              <input type="radio" name="gender" class="gender" value="female"/>
+              Female
+              <a href="#details"><button type="button" class="button"
+                onclick="JavaScript:akanName()">Submit</button></a>
+            </div>
+          </form>
+      </div>
+      <div class="animated">
+        <p id="name" class="tada"></p>
+      </div>
     </div>
     </div>
     <script src="static/js/akan.js"></script>
