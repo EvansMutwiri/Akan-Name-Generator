@@ -38,7 +38,7 @@ function akanName() {
   else if (cc < 19) {
     alert("Hahaha.. Please use correct year!!")
   }
-  //  Dom output
+  //  Output male names
   else if (Math.trunc(result) == 0 && gender === 'male') {
     document.getElementById("name").innerHTML = ("You were born on Sunday, your Akan Name is " + maleNames[0]);
     }
@@ -60,5 +60,26 @@ function akanName() {
   else if (Math.trunc(result) == 6 || Math.trunc(result) == -6 && gender === 'male') {
     document.getElementById("name").innerHTML = ("You were born on a Saturday, your Akan Name is " + maleNames[6]);
     }
-  
+  // female names
+    else if (Math.trunc(result) == 0 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on Sunday, your Akan Name is " + femaleNames[0]);
+    }
+  else if (Math.trunc(result) == 1 || Math.trunc(result) == -1 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on a Monday, your Akan Name is " + femaleNames[1]);
+    }
+  else if (Math.trunc(result) == 2 || Math.trunc(result) == -2 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on a Tuesday, your Akan Name is " + femaleNames[2]);
+    }
+  else if (Math.trunc(result) == 3 || Math.trunc(result) == -3 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on a Wednesday, your Akan Name is " + femaleNames[3]);
+    }
+  else if (Math.trunc(result) == 4 || Math.trunc(result) == -4 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on a Thursday, your Akan Name is " + femaleNames[4]);
+    }
+  else if (Math.trunc(result) == 5 || Math.trunc(result) == -5 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on a Friday, your Akan Name is " + femaleNames[5]);
+    }
+  else if (Math.trunc(result) == 6 || Math.trunc(result) == -6 && gender === 'female') {
+    document.getElementById("name").innerHTML = ("You were born on a Saturday, your Akan Name is " + femaleNames[6]);
+    }
 }
