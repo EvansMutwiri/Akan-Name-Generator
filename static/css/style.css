@@ -1,0 +1,21 @@
+*{
+    /* margin-top: 10%; */
+    box-sizing: border-box;
+}
+h2{
+    color: rgb(236, 236, 115);
+}
+
+body {
+    background-image: url(/images/image.jpg);
+    background-repeat: no-repeat;
+}
+
+.container {
+    color: ivory;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.tada {
+    font-size: 48px;
+}
