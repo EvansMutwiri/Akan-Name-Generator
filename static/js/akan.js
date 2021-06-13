@@ -30,6 +30,13 @@ function akanName() {
     alert("invalid month");
   }
   else if (mm == 2 && dd > 29) {
-    alert("invalid day of month")
+    alert("invalid day of month");
   }
+  else if (yy % 4!==0 && dd > 28) {
+    alert("invalid day of month!")
+  }
+  else if (cc < 19) {
+    alert("Hahaha.. Please use correct year!!")
+  }
+  
 }
