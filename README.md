@@ -1,5 +1,5 @@
-# My Portfolio Landing Page
-- This is the portfolio for Evans Mutwiri.  
+# Akan Culture Name Generator
+- A web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name..  
 
 ## Set up and Installation
 Click on this link to view [live page.](https://evansmutwiri.github.io/Your-Akan-Name/)    
