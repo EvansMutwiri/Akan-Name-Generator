@@ -11,19 +11,15 @@
   <body>
     <div class="container">
       <h2 class="tada">Want to know your Akan name?</h3>
+      <div class="intro">
+        <p>Fill in your date of birth in the form below. Based on the day of the week which you were born the app will tell you your Akan name.</p>
+      </div>
       <div class="row">
-        <div class="col-md-4">
-          <p>
-              Most people do know when their birthdays are, <br />
-              but some might not know what day of the week they were born. <br />
-              This web app shows you the day of the week you were born and your
-              corresponding Akan culture name.
-            </p>
-        </div>
+
         <div class="form col-md-4">
           <form action="" class="row g-3 frame">
-            <label for="Day">Day</label>
-            <input
+            <label class="labels" for="Day">Day</label>
+            <input class="input"
               type="text"
               name="day"
               id="day"
@@ -32,8 +28,9 @@
               min="01"
               required
             />
-            <label for="month">Month</label>
+            <label class="labels" for="month">Month</label>
             <input
+            class="input"
               type="text"
               name="month"
               id="month"
@@ -43,8 +40,9 @@
               min="1"
               required
             />
-            <label for="year">Year</label>
+            <label class="labels" for="year">Year</label>
             <input
+            class="input"
               type="text"
               name="year"
               id="year"
@@ -67,17 +65,6 @@
                 onclick="JavaScript:akanName()">Submit</button></a>
             </div>
           </form>
-      </div>
-      <div class="col-md-4">
-        <p>
-            <h2>Fun facts</h2>
-            <ul>
-              <li>Yams are the staple food crop in the Akan economy</li>
-              <li>Traditional Akan society is composed of exogamous matrilineal clans.</li>
-              <li></li>
-              <li></li>
-            </ul>
-          </p>
       </div>
     </div>
     </div>
