@@ -29,6 +29,9 @@ function akanName() {
   else if (mm <= 0 || mm > 12) {
     alert("invalid month");
   }
+  if (mm == "" || dd == " ") {
+    alert("cannot be left blank")
+  }
   else if (mm == 2 && dd > 29) {
     alert("invalid day of month");
   }
@@ -82,4 +85,5 @@ function akanName() {
   else if(Math.trunc(result) == 6 || Math.trunc(result) == -6 && gender === 'female') {
     alert ("You were born on a Saturday, your Akan Name is " + femaleNames[6]);
     }
+    else alert ("fill all the fields!")
 }
